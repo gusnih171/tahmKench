@@ -1,0 +1,66 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 40vh; 
+    overflow: hidden;
+}
+
+@media (max-height: 700px) {
+    .banner {
+        display: none;
+    }
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.slider iframe.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.slider iframe.inactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow.left {
+    left: 5px;
+    border-radius: 50%;
+    text-decoration: solid;
+    font-size: large;
+    color: #f0e6d2;
+}
+
+.arrow.right {
+    right: 5px;
+    border-radius: 50%;
+    text-decoration: solid;
+    font-size: large;
+    color: #f0e6d2;
+}

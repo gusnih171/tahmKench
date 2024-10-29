@@ -1,0 +1,203 @@
+.headline {
+    color: #c8aa6e;
+    justify-content: center;
+    animation: fadeIn 1s forwards;
+    display: flex;
+    font-size: 100px;
+    margin: 0;
+   
+  
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline { 
+    color: #f0e6d2;
+    animation: fadeIn 1s forwards; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0;
+   
+}
+
+
+.container {
+    justify-content: center;
+    margin: 0; 
+    opacity: 0; 
+    animation: fadeIn 1s forwards; 
+    border-radius: 10px; 
+    padding: 20px;
+    width: 80vh; 
+    height: 50vh; 
+    position: absolute; 
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #f0e6d2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+}
+
+.text {
+    margin-top: 0;
+    font-size: 20px;
+}
+.floatingText {
+    margin-top: 0;
+    font-size: 20px;
+    max-height: 100%; 
+    animation: scrollText 67s linear infinite;
+    animation-delay: 5s; 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.h1text {
+    margin-top: 0;
+    font-size: 28px;
+    color: #f0e6d2;
+    padding-left: 25%;
+}
+
+.h2text {
+    margin-top: 0;
+    font-size: 22px;
+    color: #f0e6d2;
+   padding-left: 43%;
+}
+.p-flexbox {
+    display: flex;
+   
+    justify-content: center;
+    align-items: center; 
+    padding-top: 10vh;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateY(0%);
+    }
+    5% {
+        transform: translateY(0%); 
+    }
+    95% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-100%); 
+    }
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #f0e6d2;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.image_container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .image_container img {
+    padding-top: 0px;
+    width: 500px;
+    height: auto;
+  }
+  .text_container {
+    flex: 2;
+  }
+
+
+  @media (max-width: 1050px) {
+    .image-container {
+          display: none;
+      }
+      .text {
+        font-size: 12px;
+      }
+      .h1text {
+        font-size: 14px;
+      }
+      .h2text {
+        font-size: 10px;
+      }
+
+      .container {
+        width: 60vh; 
+        height: 40vh; 
+      
+    }
+    .headline {
+        font-size: 40px;
+        top: 10vh;
+        width: 10vh;
+        
+    }
+    .underline {
+        font-size: 20px;
+        top: 28vh;
+    }
+    }
+    @media (max-width: 420px) { 
+        .container {
+            width: 40vh; 
+            height: 40vh; 
+          
+        }
+
+    }
+    @media (max-width: 720px) {     
+        .container {
+            width: 40vh; 
+            height: 50vh; 
+            
+        }
+
+    }
+    @media (max-height: 600px) {  
+        .page-container {
+        padding-top: 10vh;
+        }
+        .headline {
+            display: none;
+        }
+        .underline {
+        display: none;
+        }
+    }
+    @media (width: 912px), (height: 1368px) {
+        .headline {
+            font-size: 70px;
+            top: 10vh;
+            width: 10vh;
+            
+        }
+        .underline {
+            font-size: 40px;
+            top: 28vh;
+        }
+    }

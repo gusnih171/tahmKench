@@ -1,0 +1,19 @@
+.canvas-container {
+    position: fixed;
+    bottom: -220px;
+    left: -40px;
+    width: 500px; 
+    height: 500px; 
+    overflow: hidden;
+    z-index: 1000;
+  }
+  @media (width: 375px), (height: 667px) {
+  .canvas-container {
+    display: none;
+  }
+  }
+  @media (width: 320px), (height: 658px) {
+    .canvas-container {
+      display: none;
+    }
+    }
