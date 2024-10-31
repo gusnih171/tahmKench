@@ -50,7 +50,7 @@
     box-sizing: border-box; 
 }
 
-.text {
+.textInfo {
     margin: 0;
     font-size: 20px;
 }
@@ -105,7 +105,7 @@
     .slider-container {
           display: none;
       }
-      .text {
+      .textInfo {
         font-size: 12px;
       }
 
@@ -165,6 +165,10 @@
             display: none;
         }
     }
-    @media (max-width: 430px) { 
-
+    @media (width: 912px), (height: 1368px) {
+        
+        .textInfo {
+            font-size: 22px;
+          }
+         
     }

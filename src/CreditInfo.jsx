@@ -17,7 +17,7 @@ const CreditInfo = () => {
             <img src={Picture} alt="Tahm Kench" />
           </div>
           <div className="nofloatingText">
-            <p className="text">
+            <p className="textInfo">
               All visual content, including videos and images, used in this project are not owned by me. They are utilized solely for personal use and as a tribute to the League of Legends character, Tahm Kench.
               League of Legends and all related assets are the property of Riot Games, Inc. This project is not affiliated with, endorsed, or sponsored by Riot Games, Inc.
             </p>

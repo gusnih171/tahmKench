@@ -200,4 +200,15 @@
             font-size: 40px;
             top: 28vh;
         }
+        .text {
+            font-size: 22px;
+          }
+          .h1text {
+            font-size: 24px;
+          }
+          .h2text {
+            font-size: 20px;
+          }
     }
+
+   
